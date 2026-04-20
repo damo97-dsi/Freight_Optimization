@@ -18,15 +18,16 @@
 
 ## 📊 Sample Output
 
-Key outputs from the optimization system:
+Key analytical outputs from the system:
 
-* Baseline vs optimized routing comparison
-* Cost-delay tradeoff visualization
-* Network-level routing allocation patterns
+### Cost vs Distance Relationship
+![Cost Distance Correlation](visuals/cost_distance_correlation.png)
 
-![Optimization Results](visuals/optimization_results.png)
-![Routing Distribution](visuals/routing_distribution.png)
+### Fuel Consumption vs Load
+![Fuel vs Load](visuals/fuel_vs_load_relationship.png)
 
+### Optimization Impact (Baseline vs Optimized)
+![Optimization Results](visuals/baseline_vs_optimized_cost.png)
 ---
 
 ## Overview
