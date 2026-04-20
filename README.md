@@ -13,8 +13,8 @@
 * ⚙️ MILP-based optimization balancing cost (70%) and delay (30%)
 * 💰 Achieved ~13% reduction in composite logistics cost
 * 📦 Maintained ≥95% service-level performance under constraints
-
 ---
+## 📌 Outcome: Replaces rule-based routing with optimization-driven decision logic, reducing cost while maintaining service constraints.
 
 ## 📊 Sample Output
 
