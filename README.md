@@ -21,15 +21,20 @@
 Key analytical outputs from the system:
 
 ### Cost vs Distance Relationship
+
 ![Cost Distance Correlation](visuals/correlation_heat_map.png)
 
 ### Fuel Consumption vs Load
+
 ![Fuel vs Load](visuals/fuelvstons.png)
 
 ### Optimization Impact (Baseline vs Optimized)
+
 ![Optimization Results](visuals/optimisation.png)
 
 This comparison highlights the reduction in total logistics cost after applying constraint-based optimization, demonstrating measurable efficiency gains over baseline routing.
+
+---
 
 ## Overview
 
@@ -85,11 +90,11 @@ These outputs serve as inputs to the optimization model.
 
 Developed a Mixed-Integer Linear Programming (MILP) model using Pyomo + CBC.
 
-Objective:
+**Objective:**
 
 * minimize **0.7 × cost + 0.3 × delay**
 
-Constraints:
+**Constraints:**
 
 * service level ≥ 95%
 * delay threshold ≤ 3 hours
@@ -144,7 +149,7 @@ Python · pandas · scikit-learn · XGBoost · Pyomo · CBC Solver · matplotlib
 
 ## Project Structure
 
-```id="gq4ydx"
+```text
 Freight_Optimization/
 │
 ├── data/
@@ -174,7 +179,7 @@ Relevant for:
 
 ## How to Run
 
-```bash id="62i6yg"
+```bash
 git clone <repo-link>
 cd Freight_Optimization
 pip install -r requirements.txt
@@ -185,5 +190,5 @@ jupyter notebook
 
 ## Author
 
-**Damodara Naraparaju**
+**Damodar Naraparaju**
 Master’s in Business Analytics – Saint Peter’s University
