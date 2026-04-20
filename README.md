@@ -21,14 +21,15 @@
 Key analytical outputs from the system:
 
 ### Cost vs Distance Relationship
-![Cost Distance Correlation](visuals/cost_distance_correlation.png)
+![Cost Distance Correlation](visuals/correlation_heat_map.png)
 
 ### Fuel Consumption vs Load
-![Fuel vs Load](visuals/fuel_vs_load_relationship.png)
+![Fuel vs Load](visuals/fuelvstons.png)
 
 ### Optimization Impact (Baseline vs Optimized)
-![Optimization Results](visuals/baseline_vs_optimized_cost.png)
----
+![Optimization Results](visuals/optimisation.png)
+
+This comparison highlights the reduction in total logistics cost after applying constraint-based optimization, demonstrating measurable efficiency gains over baseline routing.
 
 ## Overview
 
