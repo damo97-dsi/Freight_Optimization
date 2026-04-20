@@ -168,16 +168,15 @@ Freight_Optimization/
 
 ## Why This Project Matters
 
-This project demonstrates how predictive analytics and optimization can work together to support real operational decisions.
+This project demonstrates how predictive analytics and optimization can move beyond analysis to drive real operational decisions.
 
-It highlights the transition from static routing rules to model-driven, constraint-based decision systems.
+It reflects how logistics systems transition from heuristic rules to model-driven, constraint-based decision frameworks.
 
 Relevant for:
-
-* Business Intelligence
-* Operations Analytics
-* Supply Chain Analytics
-* Decision Science
+- Business Intelligence  
+- Operations Analytics  
+- Supply Chain Analytics  
+- Decision Science  
 
 ---
 
