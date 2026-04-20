@@ -1,65 +1,187 @@
 # Intelligent Freight Network Optimization
-Decision Intelligence System integrating Machine Learning and Linear Optimization (Pyomo + CBC) to minimize freight cost and delays across 37 logistics hubs in the Northeastern U.S.
-# 🚛 Intelligent Freight Network Optimization
 
-### A Decision Intelligence System for Freight Logistics in the Northeastern U.S.
+### A Decision Intelligence System for Cost- and Delay-Optimized Routing Across 37 Logistics Hubs
 
-This project builds a **Decision Intelligence System** that integrates machine learning and optimization to improve freight network performance.  
-It simulates 180k+ shipments across 37 logistics hubs, predicts operational metrics, and optimizes routing decisions using Pyomo + CBC.
-
-![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
-![Pyomo](https://img.shields.io/badge/Pyomo-CBC%20Solver-brightgreen)
-![Machine Learning](https://img.shields.io/badge/ML-XGBoost-orange)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-
+[LinkedIn](https://www.linkedin.com/in/damo-madhukar) | [GitHub](https://github.com/damo97-dsi/Freight_Optimization)
 
 ---
 
-## 🧠 Architecture
+## 🚀 Executive Snapshot
 
-**1. Data Intelligence (EDA)**  
-- Cleaned and visualized operational data.  
-- Identified correlations (Cost–Distance: 0.77, Delay independence, etc.).
-
-**2. Predictive Intelligence (XGBoost)**  
-- Predicted shipment cost (R² ≈ 0.78)  
-- Predicted delay probability (R² ≈ 0.31)  
-- Predicted fuel consumption (R² ≈ 0.99)
-
-**3. Prescriptive Intelligence (Pyomo + CBC)**  
-- MILP model minimizing `0.7 × Cost + 0.3 × Delay`  
-- Service-level ≥95%, delay ≤3 hrs  
-- 13% total composite cost reduction
+* 🚛 Optimizes freight routing across 37 logistics hubs using ML + optimization
+* 📊 Predicts cost, delay risk, and fuel consumption for decision inputs
+* ⚙️ MILP-based optimization balancing cost (70%) and delay (30%)
+* 💰 Achieved ~13% reduction in composite logistics cost
+* 📦 Maintained ≥95% service-level performance under constraints
 
 ---
 
-## 📊 Results
-| Metric | Baseline | Optimized | Improvement |
-|--------|-----------|------------|--------------|
-| Composite Cost (Cost + Delay Weighted) | 572,817 | 498,886 | **12.9% ↓** |
+## 📊 Sample Output
+
+Key outputs from the optimization system:
+
+* Baseline vs optimized routing comparison
+* Cost-delay tradeoff visualization
+* Network-level routing allocation patterns
+
+![Optimization Results](visuals/optimization_results.png)
+![Routing Distribution](visuals/routing_distribution.png)
 
 ---
 
-## 🛠️ Tech Stack
-Python · Pandas · Seaborn · Scikit-Learn · XGBoost · Pyomo · CBC Solver
+## Overview
+
+📌 **Focus: Moving from heuristic routing → optimization-driven decision-making**
+
+This project builds a decision intelligence system that integrates machine learning and mixed-integer linear optimization to improve freight routing decisions.
+
+Using 180K+ simulated shipments across 37 hubs, the system predicts operational metrics and generates routing strategies that minimize cost while controlling delay risk and maintaining service constraints.
 
 ---
 
-## 🗺️ Key Files
-| File | Description |
-|------|--------------|
-| `Intelligent_Freight_Network_Optimization.ipynb` | Full analysis + optimization notebook |
-| `data/northeast_freight_network_raw.csv` | Dataset |
-| `requirements.txt` | Environment dependencies |
+## Business Problem
+
+Freight routing is often driven by static rules or local heuristics that fail to capture system-wide tradeoffs.
+
+This leads to:
+
+* inefficient routing decisions
+* higher transportation cost
+* avoidable delays
+* poor network utilization
 
 ---
 
-## 📈 Business Impact
-> The system demonstrates how predictive analytics and linear optimization can jointly drive data-driven decisions in logistics, reducing operational cost while maintaining service quality.
+## Objective
+
+Design a routing decision system that:
+
+* predicts key operational metrics
+* evaluates cost vs delay tradeoffs
+* recommends optimized routing allocations under constraints
 
 ---
 
-### Author
-**Damodar Satyadeva Madhukar Naraparaju**  
-Master’s in Business Analytics – Saint Peter’s University, NJ  
-📧 dsd.madhukar@outlook.com
+## Decision Pipeline
+
+### 1. Data Intelligence
+
+* analyzed shipment behavior across routes and hubs
+* identified cost-distance relationships (~0.77 correlation)
+
+### 2. Predictive Layer
+
+Built models to estimate optimization inputs:
+
+* Cost Prediction → R² ≈ 0.78
+* Delay Prediction → R² ≈ 0.31
+* Fuel Consumption → R² ≈ 0.99
+
+These outputs serve as inputs to the optimization model.
+
+### 3. Optimization Engine
+
+Developed a Mixed-Integer Linear Programming (MILP) model using Pyomo + CBC.
+
+Objective:
+
+* minimize **0.7 × cost + 0.3 × delay**
+
+Constraints:
+
+* service level ≥ 95%
+* delay threshold ≤ 3 hours
+* network feasibility conditions
+
+### 4. Decision Output
+
+Generated optimized routing allocations across the network, improving efficiency while maintaining operational constraints.
+
+---
+
+## Key Results
+
+| Metric         | Baseline | Optimized | Improvement    |
+| -------------- | -------- | --------- | -------------- |
+| Composite Cost | 572,817  | 498,886   | ~13% reduction |
+
+---
+
+## Business Impact
+
+* Reduced logistics cost by ~13% without compromising service levels
+* Demonstrated superiority of optimization over rule-based routing
+* Provided a scalable framework for network-level decision-making
+
+---
+
+## Tradeoff Design
+
+The optimization balances efficiency and service reliability:
+
+* **Cost (70%)** prioritized for operational efficiency
+* **Delay (30%)** included to maintain service quality
+
+This reflects real-world logistics decision tradeoffs.
+
+---
+
+## Modeling Notes
+
+Delay prediction showed lower explanatory power (**R² ≈ 0.31**), indicating higher variability.
+
+Instead of relying solely on prediction, constraints were used to control delay risk, making the system more robust.
+
+---
+
+## Tools & Technologies
+
+Python · pandas · scikit-learn · XGBoost · Pyomo · CBC Solver · matplotlib
+
+---
+
+## Project Structure
+
+```id="gq4ydx"
+Freight_Optimization/
+│
+├── data/
+├── notebooks/
+├── visuals/
+├── Intelligent_Freight_Network_Optimization.ipynb
+├── requirements.txt
+└── LICENSE
+```
+
+---
+
+## Why This Project Matters
+
+This project demonstrates how predictive analytics and optimization can work together to support real operational decisions.
+
+It highlights the transition from static routing rules to model-driven, constraint-based decision systems.
+
+Relevant for:
+
+* Business Intelligence
+* Operations Analytics
+* Supply Chain Analytics
+* Decision Science
+
+---
+
+## How to Run
+
+```bash id="62i6yg"
+git clone <repo-link>
+cd Freight_Optimization
+pip install -r requirements.txt
+jupyter notebook
+```
+
+---
+
+## Author
+
+**Damodara Naraparaju**
+Master’s in Business Analytics – Saint Peter’s University
