@@ -113,11 +113,14 @@ Generated optimized routing allocations across the network, improving efficiency
 | -------------- | -------- | --------- | -------------- |
 | Composite Cost | 572,817  | 498,886   | ~13% reduction |
 
+#### This result demonstrates the effectiveness of model-driven routing over static or rule-based allocation approaches.
 ---
 
 ## Business Impact
 
-* Reduced logistics cost by ~13% without compromising service levels
+* Reduced logistics cost by ~13% while maintaining ≥95% service levels
+* Replaced heuristic routing with constraint-based optimization
+* Demonstrated measurable efficiency gains in network-level decision-making
 * Demonstrated superiority of optimization over rule-based routing
 * Provided a scalable framework for network-level decision-making
 
